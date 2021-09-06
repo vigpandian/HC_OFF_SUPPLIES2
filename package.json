@@ -11,6 +11,7 @@
     "hdb": "^0.18.3"
   },
   "devDependencies": {
+    "@sap/hdi-deploy": "^4.2.0",
     "sqlite3": "^5.0.2"
   },
   "scripts": {
@@ -42,14 +43,13 @@
     }
   },
   "cds": {
-    "requires": {
-      "db": {
-        "kind": "sqlite",
-        "model": "*"
-      }
-    },
     "hana": {
       "deploy-format": "hdbtable"
+    },
+    "requires": {
+      "db": {
+        "kind": "hana"
+      }
     }
   }
 }
