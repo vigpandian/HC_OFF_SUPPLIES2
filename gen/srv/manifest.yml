@@ -1,0 +1,9 @@
+---
+applications:
+  - name: HC_OFF_SUPPLIES-srv
+    path: .
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - HC_OFF_SUPPLIES-db
